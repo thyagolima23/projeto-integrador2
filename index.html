@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!--Tag de idioma-->
+<head><!--Cabeçalho de configuração para ferramenta de busca-->
+  <meta charset="UTF-8"><!--Padrão para reconhecer caracteres especiais-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Compatibilidade de dispositivos-->
+  <title>Jogo da Forca</title><!--Adicionar título na aba do navegador-->
+  <link rel="stylesheet" href="style.css"><!--Associar o arquivo do css ao html-->
+</head><!--Fechamento da head-->
+<body><!--Corpo da página-->
+  <header><!--Cabeçalho da página onde fica o menu e coisas semelhantes-->
+    <h1>Jogo da Forca</h1><!--Título principal da página-->
+  </header><!--Fechamento da header-->
+
+  <!-- Seletor de nível -->
+  <label for="level">Escolha a dificuldade:</label><!--Campo com a legenda da escolha de dificuldade-->
+  <select id="level" class="level-select"><!--Menu de opções de dificuldade-->
+    <option value="facil">Fácil</option>
+    <option value="medio" selected>Médio</option> <!--Níveis de dificuldade do jogo para selecionar-->
+    <option value="dificil">Difícil</option>
+  </select>
+
+  <button class="new">Novo Jogo</button><!--Botão de ação para inciar um novo jogo-->
+
+  <main><!--Tag onde ficará o conteúdo principal da página-->
+    <article class="content-img"><!--Insere o conteúdo da imagem no documento html-->
+      <img src="img1.png" width="250px" alt="Jogo da forca"><!--Link, largura e descição da imagem-->
+    </article>
+    
+    <article class="content">
+      <div class="guess-word"></div>
+      <div class="clue"></div>
+
+      <!-- Campo para chutar a palavra completa -->
+      <div class="guess-input-container" style="display: none;">
+        <input type="text" class="guess-input" placeholder="Digite a palavra">
+        <button class="guess-btn">Chutar</button>
+      </div>
+
+      <div class="btns"></div>
+    </article>
+  </main>
+  <div class="guess-input-container">
+    <input type="text" class="guess-input" placeholder="Chute a palavra">
+    <button class="guess-btn">Chutar</button>
+  </div>
+<section><!--Abertura da section-->
+  <footer><!--Abertura do rodapé-->
+    <p>&copy; 2025 - Desenvolvido pela equipe: Pedro Augusto, Thyago Lima, Juarez Dias, Valdevina, Pedro Valerio, Maria Aparecida.</p>
+  </footer><!--Fechamento do rodapé-->
+</section><!--Fechamento da section-->
+
+
+  <script src="script.js" type="module"></script><!--Associar o link do js ao html-->
+   <!--Adicionar futuramente uma informação que indique quem são os fundadores do mini-game-->
+</body><!--Fechamento da body-->
+</html><!--Fechamento do html-->
