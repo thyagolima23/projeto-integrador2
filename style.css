@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
   
+  /* ---- ESTILOS PARA O CABEÇALHO ---- */
   body {
     background-image: url("background.jpg");
     background-repeat: no-repeat;
@@ -189,6 +190,8 @@
   
   .guess-btn:hover {
     background-color: #0056b3;
+
+    /*Estilo do rodapé da página*/
   }
   footer {
     width: 100%;
