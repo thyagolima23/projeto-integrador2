@@ -51,7 +51,7 @@ const words = [
     { word: "cabaré", clue: "cerveja"},
     { word: "caderno", clue: "escola"},
     { word: "onibus", clue: "transporte"},
-    { word: "outono", clue: "clima"},
+    { word: "outono", clue: "estação do ano"},
     { word: "atletico", clue: "galo"},
     { word: "cabeça", clue: "parte do corpo"},
   
