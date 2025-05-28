@@ -200,9 +200,7 @@
     background-color: #333;
     color: white;
     font-size: 16px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: auto; /* empurra o rodapé para o final no layout flex */
   }
   
   @media (max-width: 650px) {
