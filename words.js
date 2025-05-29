@@ -29,7 +29,7 @@ const words = [
     { word: "vela", clue: "Objeto para iluminação" },
     { word: "otorrinolaringologista", clue: "Garganta"},
     { word: "carro", clue: "Possui rodas"},
-    { word: "macaco", clue: "levantar pesos"},
+    { word: "atleta", clue: "levantar pesos"},
     { word: "datena", clue: "arremessar cadeiras"},
     { word: "vassoura", clue: "uso doméstico"},
     { word: "capacete", clue: "usa na cabeça"},
