@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-position: top;
   background-attachment: scroll;
-  height: 100%;  /* Certificando que o body ocupa toda a altura da tela */
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -31,19 +31,19 @@ header h1 {
 /* ---- ESTILOS PARA O CONTEÚDO PRINCIPAL ---- */
 main {
   display: flex;
-  align-items: center;
-  gap: 50px;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
-  min-height: calc(100vh - 100px); /* Ajusta a altura para que o conteúdo não se sobreponha ao rodapé */
+  gap: 30px;
+  min-height: calc(100vh - 100px); /* Garante que o conteúdo ocupe a altura disponível sem sobrepor o rodapé */
   padding: 20px;
+  width: 100%;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 250px;
   max-width: 400px;
   text-align: center;
 }
@@ -64,8 +64,8 @@ main {
 /* ---- ESTILOS PARA O CONJUNTO DE BOTÕES ---- */
 .btns {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -116,7 +116,7 @@ label[for="level"] {
   margin-bottom: 5px;
 }
 
-/* ---- ESTILOS PARA O CAMPO DE CHUTE DE PALAVRA ---- */
+/* ---- ESTILOS PARA O CAMPO DE CHUTE DE PALAVRA (Usado apenas para exibir quando o usuário quiser chutar a palavra) ---- */
 .guess-input-container {
   display: flex;
   gap: 13px;
@@ -170,12 +170,6 @@ footer {
     min-height: calc(100vh - 100px); /* Garante que o conteúdo não sobreponha o rodapé */
   }
 
-  .guess-input-container {
-    flex-direction: column; /* Exibe o campo de input e botão em coluna no mobile */
-    gap: 10px;
-    margin-top: 10px;
-  }
-
   .guess-word {
     font-size: 40px;
   }
@@ -186,8 +180,7 @@ footer {
 
   .guess-input {
     font-size: 16px;
-    width: 100%;
-    padding: 8px;
+    width: 100%;  /* Campo de entrada de texto ocupa 100% da largura */
   }
 
   .guess-btn {
