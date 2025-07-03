@@ -53,17 +53,18 @@ function generateGuessSection() {
 function getWordByLevel() {
   const level = levelSelect.value;
   let wordData;
-  
+
   do {
     wordData = getWord();
-  } while (
-    (level === "facil" && wordData.word.length < 6) ||
-    (level === "medio" && (wordData.word.length >= 6 || wordData.word.length < 9)) ||
-    (level === "dificil" && wordData.word.length >= 9)
-  );
+    const len = wordData.word.length;
+    if (level === "facil" && len >= 6) break;
+    if (level === "medio" && len >= 6 && len < 9) break;
+    if (level === "dificil" && len >= 9) break;
+  } while (true);
 
   return wordData;
 }
+
 
 function wrongAnswer() {
   indexImg++;
