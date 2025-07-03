@@ -146,7 +146,7 @@ label[for="level"] {
 .guess-btn {
   font-size: 18px;
   padding: 5px 10px;
-  background-color: #facc02;
+  background-color: red;
   border: none;
   border-radius: 5px;
   cursor: pointer;
