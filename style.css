@@ -28,6 +28,15 @@ header h1 {
   margin-bottom: 15px;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 /* ---- ESTILOS PARA O CONTEÚDO PRINCIPAL ---- */
 main {
   display: flex;
@@ -35,7 +44,8 @@ main {
   align-items: center;
   justify-content: flex-start;
   gap: 30px;
-  min-height: calc(100vh - 100px); /* Garante que o conteúdo ocupe a altura disponível sem sobrepor o rodapé */
+  min-height: calc(100vh - 100px);
+  /* Garante que o conteúdo ocupe a altura disponível sem sobrepor o rodapé */
   padding: 20px;
   width: 100%;
 }
@@ -86,7 +96,6 @@ button {
 .new {
   width: 140px;
   background-color: #e90606;
-  margin: 20px;
   font-size: 18px;
 }
 
@@ -162,16 +171,30 @@ footer {
 @media (max-width: 650px) {
   body {
     height: 100%;
-    overflow: hidden; /* Impede o scroll extra quando o teclado aparece */
+
   }
 
+  header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+article img {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+}
   main {
     padding: 10px;
-    min-height: calc(100vh - 100px); /* Garante que o conteúdo não sobreponha o rodapé */
+    width: 90%;
+    height: 80%;
+    /* Garante que o conteúdo não sobreponha o rodapé */
   }
 
   .guess-word {
-    font-size: 40px;
+    font-size: 2.5em;
   }
 
   .btns {
@@ -180,7 +203,8 @@ footer {
 
   .guess-input {
     font-size: 16px;
-    width: 100%;  /* Campo de entrada de texto ocupa 100% da largura */
+    width: 100%;
+    /* Campo de entrada de texto ocupa 100% da largura */
   }
 
   .guess-btn {
@@ -195,4 +219,3 @@ footer {
     padding: 10px;
   }
 }
-
