@@ -57,9 +57,9 @@ function getWordByLevel() {
   do {
     wordData = getWord();
   } while (
-    (level === "facil" && wordData.word.length > 6) ||
-    (level === "medio" && (wordData.word.length < 6 || wordData.word.length > 9)) ||
-    (level === "dificil" && wordData.word.length <= 9)
+    (level === "facil" && wordData.word.length < 6) ||
+    (level === "medio" && (wordData.word.length >= 6 || wordData.word.length < 9)) ||
+    (level === "dificil" && wordData.word.length >= 9)
   );
 
   return wordData;
